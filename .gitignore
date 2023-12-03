@@ -1,0 +1,28 @@
+# Build and Release Folders
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
+[Bb]uild/
+[Oo]ut/
+[Tt]mp/
+
+# Other files and folders
+.gradle/
+.vscode/
+.idea/
+.DS_*/
+
+# File extensions
+*.mbtiles
+*.air
+*.ipa
+*.apk
+*.dab
+*.sh
+*.iml
+*.ipr
+*.iws
+*.tsbuildinfo
+*~
+*.tar.gz
