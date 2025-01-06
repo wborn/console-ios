@@ -26,6 +26,7 @@ jobs:
 
       - name: Test
         run: |
+          echo "GITHUB_ACTOR: ${GITHUB_ACTOR}"
           echo "GITHUB_EVENT_NAME: ${GITHUB_EVENT_NAME}"
           echo "GITHUB_REF: ${GITHUB_REF}"
           echo "GITHUB_REF_NAME: ${GITHUB_REF_NAME}"
