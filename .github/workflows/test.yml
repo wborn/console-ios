@@ -31,3 +31,9 @@ jobs:
           echo "GITHUB_REF: ${GITHUB_REF}"
           echo "GITHUB_REF_NAME: ${GITHUB_REF_NAME}"
           echo "GITHUB_REF_TYPE: ${GITHUB_REF_TYPE}"
+
+          if [ "$GITHUB_EVENT_NAME" == 'workflow_dispatch' ] && [ "$GITHUB_REF_TYPE" != 'tag' ]; then
+            echo "It's not a tag"
+          else
+            echo "It's a tag"
+          fi
